@@ -1,5 +1,5 @@
 // OBJECT BASICS
-// CCreate a class named Person
+// Create a class named Person
 public class Person {
 
     // Create a private field with a string
@@ -36,5 +36,26 @@ public class Person {
     public static void main (String[] arg) {
         Person ambrose = new Person("Ambrose");
         ambrose.sayHello();
+
+        // UNDERSTANDING REFERENCES
+        // Examine the outcomes of the codeblocks below
+        Person person1 = new Person("John");
+        Person person2 = new Person("John");
+        System.out.println(person1.getName().equals(person2.getName())); // returns true
+        System.out.println(person1 == person2); // returns false
+
+        Person person3 = new Person("John");
+        Person person4 = person3;
+        System.out.println(person3 == person4); // returns true
+
+        Person person5 = new Person("John");
+        Person person6 = person5;
+        System.out.println(person5.getName()); // returns John
+        System.out.println(person6.getName()); // returns John
+        person6.setName("Jane");
+        System.out.println(person5.getName()); // returns Jane
+        System.out.println(person6.getName()); // returns Jane
+
+
     }
 }
