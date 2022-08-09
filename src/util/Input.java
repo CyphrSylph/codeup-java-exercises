@@ -26,11 +26,10 @@ public class Input {
     public int getInt(int min, int max) {
         // Prompt user to enter a number between 1 and 10
         System.out.print("Enter a number between " + min + " and " + max + ":");
-        // Store user input value
+        // Store user input value using scanner
         int userInt = scanner.nextInt();
-        // Validate user input value
+        // Validate user input value based on range
         if (userInt > min && userInt < max) {
-            // Prompt user with confirmation if correct
             return userInt;
         } else {
             // Prompt user to enter number again if incorrect
