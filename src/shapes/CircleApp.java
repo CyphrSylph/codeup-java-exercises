@@ -8,20 +8,20 @@ public class CircleApp {
     // Set main method for testing sub methods
     public static void main(String[] args) {
 
-        // Import input class to access methods
+        // Import input class to access methods and create new input object
         Input radiusInput = new Input();
 
-        // Prompt user for Circle App
+        // Prompt user with system dialog for Circle App
         System.out.println("Let's make a circle!");
         System.out.println("To start we will need a radius...");
 
-        // Import getDouble method to grab user radius
+        // Import getDouble method and convert double to user radius
         double userRadius = radiusInput.getDouble();
 
         // Insert new line for spacing
         System.out.println();
 
-        // Create new circle object
+        // Create new circle object with circle class
         Circle circle = new Circle(userRadius);
 
         // Call method to calculate area of circle and print result
