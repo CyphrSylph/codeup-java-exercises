@@ -32,7 +32,7 @@ public class HighLow {
             // If the random number is higher than the user input prompt user to retry
             else if (magicNum > userNum) {
                 System.out.println("Hmm, " + userNum + " is too low.");
-                System.out.println("Keep trying podling!");
+                System.out.println("Keep trying Podling!");
             }
 
             // If the random number is guessed prompt user with win and set boolean value to true
