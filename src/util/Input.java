@@ -66,7 +66,7 @@ public class Input {
 
     public double getDouble() {
         // Prompt user to enter a number
-        System.out.println("Enter a number:");
+        System.out.print("Enter a number:");
         // Store user input value
         double userDouble = scanner.nextDouble();
         return userDouble;
