@@ -11,6 +11,10 @@ public class Person {
         this.name = name;
     }
 
+    @Override
+    public String toString() {
+        return name;
+    }
 
     // Set accessors [getters & setters]
     public String getName(){
