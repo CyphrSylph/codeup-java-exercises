@@ -8,7 +8,7 @@ public class Input {
     private Scanner scanner = new Scanner(System.in);
 
     public String getString() {
-        System.out.println("Enter the safe word: ");
+//        System.out.println("Enter the safe word: ");
         String safeWord = scanner.nextLine();
         return safeWord;
     }
