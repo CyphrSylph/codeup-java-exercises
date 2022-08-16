@@ -1,5 +1,6 @@
 // CREATE AN INPUT VALIDATION CLASS
 package util;
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Input {
@@ -40,11 +41,19 @@ public class Input {
     }
 
     public int getInt() {
-        // Prompt user to enter a number
-        System.out.println("Enter a number:");
-        // Store user input value
-        int userInt = scanner.nextInt();
-        return userInt;
+        // Try-catch statement
+        try {
+            // Inline variable calling getString method using parseInt
+            return Integer.parseInt(getString());
+        // Throw format exception if input cannot be parsed as int
+        } catch (NumberFormatException e) {
+            // Error message
+            System.out.println("Bruh...");
+            System.out.println("(ㆆ_ㆆ)");
+            System.out.println("That's not a number");
+        }
+        // Set temporary return value
+        return getInt();
     }
 
     public double getDouble(double min, double max) {
@@ -65,10 +74,18 @@ public class Input {
     }
 
     public double getDouble() {
-        // Prompt user to enter a number
-        System.out.print("Enter a number:");
-        // Store user input value
-        double userDouble = scanner.nextDouble();
-        return userDouble;
+        // Try-catch statement
+        try {
+            // Inline variable calling getString method using parseInt
+            return Double.parseDouble(getString());
+            // Throw format exception if input cannot be parsed as int
+        } catch (NumberFormatException e) {
+            // Error message
+            System.out.println("Bruh...");
+            System.out.println("(≖_≖ )");
+            System.out.println("That's not a decimal");
+        }
+        // Set temporary return value
+        return getDouble();
     }
 }
