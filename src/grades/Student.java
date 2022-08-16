@@ -8,12 +8,12 @@ public class Student {
     private String name;
 
     // ArrayLists specify Integer instead of int
-    private ArrayList<Integer> grades;
+    private static ArrayList<Integer> grades;
 
     // Constructor to set name property and initialize grade property
     public Student(String name) {
         this.name = name;
-        this.grades = new ArrayList<>();
+        grades = new ArrayList<>();
     }
 
     // Returns the student's name
